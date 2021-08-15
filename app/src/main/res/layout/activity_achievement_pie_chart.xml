@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nishant.ngo.Achievment.AchievementPieChart">
+
+
+    <com.razerdp.widget.animatedpieview.AnimatedPieView
+        android:id="@+id/achievementpiechartid"
+        android:layout_width="match_parent"
+        android:layout_height="700dp" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#A4A698"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:text="Tree Plantation"
+                />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#AB6127"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="26dp"
+                android:text="Events"
+                />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#E93E58"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:text="Education"
+                />
+        </LinearLayout>
+
+        <!-- -->
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#44899A"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:text="Child Protection"
+                />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#779B9A"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="26dp"
+                android:text="Adoption"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

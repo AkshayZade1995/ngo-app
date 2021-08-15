@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nishant.ngo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelfRegisterActivity" />
+        <activity android:name=".GoGreen.GoGreenActivity" />
+        <activity
+            android:name=".Volunteer.SelfVolunteeringActivity"
+            android:label="@string/title_activity_self_volunteering"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DonationActivity" />
+        <activity android:name=".ourServiceActivity" />
+        <activity android:name=".SponserActivity" />
+        <activity android:name=".AccountPackage.ProfileActivity1" />
+        <activity android:name=".AccountPackage.ProfileActivity" />
+        <activity android:name=".AdminCampaigns.AdminCampaignsUpload" />
+        <activity android:name=".AdminCampaigns.CampaignsViewer" />
+        <activity android:name=".ConsultingActivity" />
+        <activity android:name=".GoGreen.ViewImageActvity" />
+        <activity android:name=".AcievementActivity" />
+        <activity android:name=".AccountPackage.Login1" />
+        <activity android:name=".AccountPackage.Login" />
+        <activity android:name=".AccountPackage.AdminPanel1" />
+        <activity android:name=".AccountPackage.AdminPanel" />
+        <activity android:name=".AccountPackage.AccountActivity1" />
+        <activity android:name=".AccountPackage.WelcomeActivity1" />
+        <activity android:name=".News.NewsMainActivity" />
+        <activity android:name=".News.NewsDetailsActivity" />
+        <activity android:name=".Achievment.AchievementPieChart"></activity>
+    </application>
+
+</manifest>

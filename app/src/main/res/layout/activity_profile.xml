@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="com.example.nishant.ngo.AccountPackage.ProfileActivity1">
+
+    <ImageView
+        android:id="@+id/regUserPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/userphoto"
+        />
+
+    <EditText
+        android:layout_marginTop="45dp"
+        android:id="@+id/regName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/regMail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/regPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone no"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/regPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/regPassword2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Connfirm Password"
+        />
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20dp"
+        android:background="@drawable/selfregisterbuttoninput"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:background="@drawable/selfregisterbuttoninput"
+        android:textAllCaps="false"
+        />
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

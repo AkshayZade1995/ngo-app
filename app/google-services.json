@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "538433079818",
+    "firebase_url": "https://ngoproject-8c1ea.firebaseio.com",
+    "project_id": "ngoproject-8c1ea",
+    "storage_bucket": "ngoproject-8c1ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538433079818:android:23481186f9893f73",
+        "android_client_info": {
+          "package_name": "com.example.nishant.ngo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538433079818-f1qg8dt4on58mgkoug0cuni74u602ll3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nishant.ngo",
+            "certificate_hash": "8f75fb3bb498032a3b8608c3db76cff52afbb86a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0yNgokTZTed9KXGYosxT6plnxRfdxiYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538433079818-s86pu7habj269bl8s71903hq4jqornej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

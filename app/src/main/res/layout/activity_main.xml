@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nishant.ngo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="NGO"
+            android:background="@drawable/appbg"
+            >
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- PROFILE ICON ON TOOLBAR -->
+
+
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        >
+
+        <!-- VERTICAL COMPLETE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/completeLinearLayout"
+            android:background="#fcfcfc"
+            >
+
+            <!-- ROW 0-->
+
+            <!--ROW 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/linearZeroRow"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card01"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!--==============  BLOCK 0 1 =========-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgrounddarkpink"
+                            android:src="@drawable/accounticon"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profile"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FF279A"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Settings"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- BLOCK 1 2-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card02"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 1st BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundpurple"
+                            android:src="@drawable/events"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Campaigns"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#807FFE"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Event Section"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--ROW 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/linearFirstRow"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card11"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!--==============  BLOCK 1 1 =========-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundorange"
+                            android:src="@drawable/news"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="News"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFCC80"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Latest News"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- BLOCK 1 2-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card12"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 1st BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundblue"
+                            android:src="@drawable/consulting"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Consulting"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#CC85A3"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In sifferent streams"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!--==============ROW 2===============-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/linearSecondRow"
+                >
+                <!-- CONSULTANT CARD -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card21"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 2nd row 1st BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundpista"
+                            android:src="@drawable/achievementicon"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Achievement"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#49ABA4"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Our success"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- VOLUNTER CARD -->
+                <!-- BLOCK 2 2-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card22"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 2nd row 2nd BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundyellow"
+                            android:src="@drawable/volunteering"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Volunteer"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#CCCC00"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Self Volunteering"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <!--======================  ROW 3   ===============-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/linearthirdRow"
+                >
+
+                <!-- 3rd row 1st BLOCK-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card31"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundpink"
+                            android:src="@drawable/donate"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Donate"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#F4B2D8"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Help the needy"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- 3rd row BLOCK 2 2-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card32"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 3nd row 2nd BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundgreen"
+                            android:src="@drawable/plant"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Go Green"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ACDF87"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plant nursery"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- TESTING -->
+
+
+            <!--==============ROW 4===============-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/linearFourthRow"
+                >
+                <!-- SPONSERS CARD -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card41"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 2nd row 1st BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundparrotgreen"
+                            android:src="@drawable/sponserslogo"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sponsers"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BFC92A"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Our Partners"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- VOLUNTER CARD -->
+                <!-- BLOCK 2 2-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card42"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    >
+
+                    <!-- 2nd row 2nd BLOCK-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fcfcfc"
+                        >
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circlebackgroundskincolor"
+                            android:src="@drawable/ourservices"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Our Services"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#F8896B"
+                            android:layout_margin="10dp"
+                            >
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About Services"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
