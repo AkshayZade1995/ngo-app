@@ -1,5 +1,7 @@
 # NGO Services App
 ## App to showcase NGO services
+### Technology Stack :- 
+- Java | XML | Firebase
 ### Functionalities :-
 - Profile 
   - Description : Register | Login | Logout 
@@ -75,7 +77,9 @@
   </tr>
 </table>
 
-### Any Queries - Contact :- zadeakshay321@gmail.com | [Gmail Link](mailto:zadeakshay321@gmail.com)
+### Any Queries
+- Contact :- zadeakshay321@gmail.com | [Gmail Link](mailto:zadeakshay321@gmail.com)
+- LinkedIn :- [Akshay Zade](https://www.linkedin.com/in/akshay-zade-4811891a0/) 
 
 
 
